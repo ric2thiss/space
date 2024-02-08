@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* background Images Body */
+body{
+    background-image: url(./home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#toggle_menu{
+    border: none;
+    background-color: transparent;
+}
+/* header navigation placeholder */
+header div{
+    display: flex;
+    justify-content: space-between;
+    max-width: 95%;
+    margin: 1rem auto;
+}
+nav{
+    display: none;
+}
