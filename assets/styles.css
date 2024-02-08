@@ -20,5 +20,15 @@ header div{
     margin: 1rem auto;
 }
 nav{
-    display: none;
+    position: fixed;
+    inset: 0 0 0 30%;
+    z-index: 1000;
+    height: 100vh;
+    /* background-color: steelblue; */
+
+    padding: min(30vh, 10rem) 2em;
+    background: hsl(0, 0%, 100% , .1);
+    backdrop-filter: blur(.5em);
+
+    color: #fff;
 }
