@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* background Images Body */
 body{
@@ -8,9 +10,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* Toggle for mobile Menu */
 #toggle_menu{
     border: none;
     background-color: transparent;
+    position: fixed;
+    z-index: 9999;
+    right: 1rem;
 }
 /* header navigation placeholder */
 header div{
@@ -19,16 +25,36 @@ header div{
     max-width: 95%;
     margin: 1rem auto;
 }
+/* Container for Menu navigation links in mobile */
 nav{
     position: fixed;
     inset: 0 0 0 30%;
     z-index: 1000;
     height: 100vh;
-    /* background-color: steelblue; */
 
     padding: min(30vh, 10rem) 2em;
     background: hsl(0, 0%, 100% , .1);
     backdrop-filter: blur(.5em);
 
+    text-transform: uppercase;
     color: #fff;
+}
+/* The unordered list */
+#main_menu {
+    display: flex;
+    flex-direction: column; /*This is only for mobile*/
+    gap: 1rem;
+}
+#main_menu a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+}
+#main_menu span{
+    font-weight: 800;
+}
+
+li {
+    display: flex;
+    gap: 1em;
 }
