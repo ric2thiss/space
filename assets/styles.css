@@ -47,6 +47,10 @@ nav{
     color: #fff;
 
     transform: translateX(100%);
+    transition: .5s;
+}
+.primary_nav[data-visible="true"] {
+    transform: translateX(0%);
 }
 @supports (backdrop-filter: blur(1rem)) {
     nav{
