@@ -12,11 +12,18 @@ body{
 }
 /* Toggle for mobile Menu */
 #toggle_menu{
+    display: block;
     border: none;
     background-color: transparent;
     position: fixed;
     z-index: 9999;
     right: 1rem;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    border: 0;
+    background-repeat: no-repeat;
+    background-image: url(./shared/icon-hamburger.svg);
+
 }
 /* header navigation placeholder */
 header div{
@@ -38,6 +45,8 @@ nav{
 
     text-transform: uppercase;
     color: #fff;
+
+    transform: translateX(100%);
 }
 @supports (backdrop-filter: blur(1rem)) {
     nav{
