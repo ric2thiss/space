@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
     font-size: 1rem;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Poppins", sans-serif;
+}
+p{
+    font-weight: 100!important;
+    line-height: normal;
+}
+h1{
+    font-weight: 500;
+    font-size: 50px;
+    letter-spacing: 10px;
 }
 /* background Images Body */
 body{
@@ -24,6 +34,11 @@ body{
     background-repeat: no-repeat;
     background-image: url(./shared/icon-hamburger.svg);
 
+}
+/* Place holder of every content */
+.container {
+    max-width: 95%;
+    margin: 2rem auto;
 }
 /* header navigation placeholder */
 header div{
@@ -76,4 +91,39 @@ nav{
 li {
     display: flex;
     gap: 1.5em;
+}
+
+/* Content Sections */
+.hero_section{
+    padding: 0 2rem;
+    color: #fff;
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+.hero_section h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+.hero_section p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* Explore Button */
+.explore_button{
+    background-color: #fff;
+    border: 0;
+    margin-top: 1rem;
+    width: fit-content;
+    padding: 1.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    text-transform: uppercase;
+
 }
