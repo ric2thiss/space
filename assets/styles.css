@@ -33,17 +33,23 @@ nav{
     height: 100vh;
 
     padding: min(30vh, 10rem) 2em;
-    background: hsl(0, 0%, 100% , .1);
+    background: hsl(0, 0%, 0% , .75);
     backdrop-filter: blur(.5em);
 
     text-transform: uppercase;
     color: #fff;
 }
+@supports (backdrop-filter: blur(1rem)) {
+    nav{
+        background: hsl(0, 0%, 100% , .1);
+        backdrop-filter: blur(.5em);
+    }
+}
 /* The unordered list */
 #main_menu {
     display: flex;
     flex-direction: column; /*This is only for mobile*/
-    gap: 1rem;
+    gap: 2rem;
 }
 #main_menu a{
     text-decoration: none;
@@ -56,5 +62,5 @@ nav{
 
 li {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
 }
