@@ -14,12 +14,6 @@ h1{
     font-size: 50px;
     letter-spacing: 10px;
 }
-/* background Images Body */
-body{
-    background-image: url(./home/background-home-mobile.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 /* Toggle for mobile Menu */
 #toggle_menu{
     display: block;
@@ -92,38 +86,5 @@ li {
     display: flex;
     gap: 1.5em;
 }
-
 /* Content Sections */
-.hero_section{
-    padding: 0 2rem;
-    color: #fff;
-    display: flex;
-    gap: 1.5rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-weight: 100;
-}
-.hero_section h1{
-    text-align: center;
-    text-transform: uppercase;
-}
-.hero_section p{
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 100;
-}
-
-/* Explore Button */
-.explore_button{
-    background-color: #fff;
-    border: 0;
-    margin-top: 1rem;
-    width: fit-content;
-    padding: 1.75rem;
-    aspect-ratio: 1;
-    border-radius: 50%;
-
-    text-transform: uppercase;
-
-}
+/* Is located at index.css */

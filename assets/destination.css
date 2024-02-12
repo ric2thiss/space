@@ -1,0 +1,61 @@
+body{
+    background-image: url(./destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__destination{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.header__destination span{
+    font-weight: 800!important;
+    color: gray;
+}
+.destination_image{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.tabs{
+    display: flex;
+    gap: .2rem;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+li{
+    transition: .3s;
+    padding: 1rem;
+}
+.tabs li:hover  {
+    transform: translateY(-5px);
+    border-bottom: 1px solid #fff;
+}
+.tabs__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    margin-top: .5rem;
+}
+.tab_title{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500!important;
+}
+.tab_description{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 100;
+    text-align: center;
+}
