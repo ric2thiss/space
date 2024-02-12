@@ -58,14 +58,10 @@ fetch("./data.json")
             `
             <img src="${destination.images.png}" width="50%"></img>
             `
-
-
-            
-
-            
            }
         }
     })
   }
 
+//   TEST
 
