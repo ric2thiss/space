@@ -59,3 +59,24 @@ body{
     font-weight: 100;
     text-align: center;
 }
+
+.distance, .time{
+    color: #fff;
+    text-align: center;
+}
+.distance_time_frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 1.5rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+hr{
+    margin: 2rem 0;
+    border: 0;
+    height: 1px;
+    background-color: gray;
+}
