@@ -74,6 +74,12 @@ body{
     margin-top: 1rem;
     text-transform: uppercase;
 }
+.distance_time_frame p{
+    font-size: 14px;
+}
+.travel_time, .avg_distance{
+    font-size: 1.4rem;
+}
 hr{
     margin: 2rem 0;
     border: 0;
