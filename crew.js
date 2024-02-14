@@ -45,9 +45,7 @@ radio_Btn.forEach((btn, index) =>
 )
 
 // Set interval
-setInterval(()=>{
-    
-  }, 2000);
+
 
 
 
