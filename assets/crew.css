@@ -1,0 +1,22 @@
+body{
+    background-image: url(./crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__crews{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.crew__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    border-bottom: 1px solid rgba(128, 128, 128, 0.548);
+}

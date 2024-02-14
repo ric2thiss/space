@@ -88,3 +88,9 @@ li {
 }
 /* Content Sections */
 /* Is located at index.css */
+hr{
+    margin: 2rem 0;
+    border: 0;
+    height: 1px;
+    background-color: gray;
+}
