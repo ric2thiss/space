@@ -20,7 +20,7 @@ async  function getImage(index) {
 async  function getInformation(index) {
     const response = await fetch("./data.json")
     const realData = await response.json()
-    return realData.crew[index].name
+    return realData.crew[index]
 }
 
 const radio_Btn = document.querySelectorAll(".radio_Btn");
@@ -28,23 +28,24 @@ const template = document.querySelector(".crew__Information")
 // For Click Event
 radio_Btn.forEach((btn, index) => 
     btn.addEventListener("click",async ()=>{
-        // Test
-        const name = await getInformation(index);
+        const data = await getInformation(index)
         
-
-
         const imageData = await getImage(index);
         crew__image.innerHTML = `<img src="${imageData}"style= "width: 60%" />
         `
         template.innerHTML = `
-        <p class="role"></p>
-        <p class="name" style="color:white">${name}</p>
-        <p class="bio"></p>
+        <p class="role">${data.role}</p>
+        <p class="name">${data.name}</p>
+        <p class="bio">${data.bio}</p>
         `
     })
 )
 
-// Set interval
+// Set interval 
+
+setInterval(()=>{
+    
+},1000)
 
 
 

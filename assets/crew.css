@@ -20,3 +20,21 @@ body{
 
     border-bottom: 1px solid rgba(128, 128, 128, 0.548);
 }
+.crew__carousel{
+    text-align: center;
+}
+
+.crew__Information{
+    text-align: center;
+    color: #fff;
+}
+.role {
+    color: rgb(128, 128, 128);
+    font-size: 1rem;
+}
+.name{
+    font-size: 1.2rem;
+}
+.bio{
+    font-size: .8rem;
+}
