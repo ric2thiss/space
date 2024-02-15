@@ -38,3 +38,9 @@ body{
 .bio{
     font-size: .8rem;
 }
+.Information{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}

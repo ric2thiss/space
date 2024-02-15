@@ -1,4 +1,5 @@
 const crew__image = document.querySelector(".crew__image")
+const template = document.querySelector(".crew__Information")
 
 fetch("./data.json")
 .then(response => response.json())
@@ -6,6 +7,11 @@ fetch("./data.json")
     // console.log(data.crew[0].name)
     // console.log("Passed")
     crew__image.innerHTML = `<img src="${data.crew[0].images.png}" title="${data.crew[0].name}" style= "width: 60%" />
+    `
+    template.innerHTML = `
+    <p class="role">${data.crew[0].role}</p>
+    <p class="name">${data.crew[0].name}</p>
+    <p class="bio">${data.crew[0].bio}</p>
     `
 })
 
@@ -24,7 +30,6 @@ async  function getInformation(index) {
 }
 
 const radio_Btn = document.querySelectorAll(".radio_Btn");
-const template = document.querySelector(".crew__Information")
 // For Click Event
 radio_Btn.forEach((btn, index) => 
     btn.addEventListener("click",async ()=>{
